@@ -1,5 +1,5 @@
 {
   "service": "checkout-service",
-  "release": "2026.04.01.7",
-  "status": "stable"
+  "release": "2026.04.02.3",
+  "status": "degraded"
 }
