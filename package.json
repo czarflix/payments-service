@@ -1,0 +1,9 @@
+{
+  "name": "payments-service",
+  "version": "2026.04.01.7",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --eval \"import('./src/checkout.ts').then(() => console.log('ok'))\""
+  }
+}
