@@ -1,15 +1,15 @@
 export const checkoutConfig = {
   service: "checkout-service",
-  retryBudget: 5,
-  timeoutMs: 420,
-  circuitBreaker: "aggressive",
-  notes: "Regression release profile that retries too quickly under load.",
+  retryBudget: 2,
+  timeoutMs: 1800,
+  circuitBreaker: "balanced",
+  notes: "Stable release profile for checkout traffic.",
 };
 
 export function buildChargePayload(orderId: string) {
   return {
     orderId,
-    mode: "regression",
+    mode: "stable",
     retryBudget: checkoutConfig.retryBudget,
     timeoutMs: checkoutConfig.timeoutMs,
   };
